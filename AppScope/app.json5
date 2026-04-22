@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.hmosdemos.wearable.language_guess",
+    "bundleName": "com.hmosdemos.wearable.guess_the_language",
     "vendor": "hmosdemos",
     "versionCode": 1000000,
     "versionName": "1.0.0",

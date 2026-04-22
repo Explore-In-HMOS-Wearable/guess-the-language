@@ -3,6 +3,94 @@
     {
       "name": "start_window_background",
       "value": "#FFFFFF"
+    },
+    {
+      "name": "color_primary",
+      "value": "#311E10"
+    },
+    {
+      "name": "color_gold",
+      "value": "#EABE7C"
+    },
+    {
+      "name": "color_background",
+      "value": "#F9F8F6"
+    },
+    {
+      "name": "color_accent",
+      "value": "#DD6031"
+    },
+    {
+      "name": "color_correct",
+      "value": "#58CC02"
+    },
+    {
+      "name": "color_wrong",
+      "value": "#FF4B4B"
+    },
+    {
+      "name": "color_correct_shadow",
+      "value": "#2A8E00"
+    },
+    {
+      "name": "color_wrong_shadow",
+      "value": "#FF2B2B"
+    },
+    {
+      "name": "color_correct_bg",
+      "value": "#D6FFB8"
+    },
+    {
+      "name": "color_wrong_bg",
+      "value": "#FFDFE0"
+    },
+    {
+      "name": "color_timer_urgent",
+      "value": "#FF4444"
+    },
+    {
+      "name": "color_timer_normal",
+      "value": "#FF6B35"
+    },
+    {
+      "name": "color_timer_bg_urgent",
+      "value": "#FFEBEE"
+    },
+    {
+      "name": "color_timer_bg_normal",
+      "value": "#FFF3E0"
+    },
+    {
+      "name": "color_option_selected_border",
+      "value": "#1899D6"
+    },
+    {
+      "name": "color_option_selected_bg",
+      "value": "#63C9F9"
+    },
+    {
+      "name": "color_option_bg",
+      "value": "#ECE4B7"
+    },
+    {
+      "name": "color_option_border",
+      "value": "#777777"
+    },
+    {
+      "name": "color_disabled_bg",
+      "value": "#DDDDDD"
+    },
+    {
+      "name": "color_disabled_text",
+      "value": "#BBBBBB"
+    },
+    {
+      "name": "color_disabled_shadow",
+      "value": "#FFACACAC"
+    },
+    {
+      "name": "color_shadow",
+      "value": "#999999"
     }
   ]
 }

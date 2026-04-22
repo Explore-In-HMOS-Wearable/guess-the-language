@@ -1,15 +1,16 @@
 import { Question } from '../model/Question';
-import { cryptoFramework } from '@kit.CryptoArchitectureKit';
+import { secureRandomNumber } from './SecureRandom';
 
-//Fisher-Yates Shuffle Algorithm
-export function shuffleList(questionList: Question[]) {
+// Fisher-Yates shuffle algorithm.
+export function shuffleList(questionList: Question[]): void {
   for (let i = 0; i < questionList.length; i++) {
-    let rand = cryptoFramework.createRandom();
-    let randOutput = rand.generateRandomSync(1);
-    let mappedRandom = Math.floor((randOutput.data[0] - 1) * (questionList.length) / (255))
-    console.info(`new random is ${mappedRandom}-`)
-    const tmp = questionList[mappedRandom];
-    questionList[mappedRandom] = questionList[i]
-    questionList[i] = tmp
+    try {
+      const randomIndex = i + Math.floor(secureRandomNumber() * (questionList.length - i));
+      const tmp = questionList[randomIndex];
+      questionList[randomIndex] = questionList[i];
+      questionList[i] = tmp;
+    } catch (error) {
+      console.error(`Shuffle error at index ${i}: ${error}`);
+    }
   }
 }
