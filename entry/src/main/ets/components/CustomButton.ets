@@ -1,6 +1,6 @@
 @Component
 export struct CustomButton {
-  @Prop text: string = '';
+  @Prop text: ResourceStr = '';
   @Prop isEnabled: boolean = true;
   @Prop @Watch('buttonTy') type: boolean = false;
   @State pressed: boolean = false;
@@ -11,13 +11,13 @@ export struct CustomButton {
       Column()
         .width('100%')
         .height(36)
-        .backgroundColor(this.isEnabled ? (this.type ? '#2A8E00' : '#ff2b2b') : '#ffacacac')
+        .backgroundColor(this.isEnabled ? (this.type ? $r('app.color.color_correct_shadow') : $r('app.color.color_wrong_shadow')) : $r('app.color.color_disabled_shadow'))
         .borderRadius(16)
 
       Column()
         .width('100%')
         .height(36)
-        .backgroundColor(this.isEnabled ? (this.type ? '#58CC02' : '#FF4B4B') : '#DDDDDD')
+        .backgroundColor(this.isEnabled ? (this.type ? $r('app.color.color_correct') : $r('app.color.color_wrong')) : $r('app.color.color_disabled_bg'))
         .borderRadius(16)
         .offset({ x: 0, y: this.pressed ? 0 : -4 })
         .animation({ duration: 80 })
@@ -25,7 +25,7 @@ export struct CustomButton {
       Text(this.text)
         .fontSize(18)
         .fontWeight(FontWeight.Bold)
-        .fontColor(this.isEnabled ? Color.White : '#BBBBBB')
+        .fontColor(this.isEnabled ? Color.White : $r('app.color.color_disabled_text'))
         .offset({ x: 0, y: this.pressed ? 0 : -4 })
         .animation({ duration: 80 })
     }

@@ -1,24 +1,30 @@
 import { CustomButton } from '../components/CustomButton';
 import { Score } from '../model/Score';
 import { storeScore } from '../utils/ScoreStorage';
-import { emitter } from '@kit.BasicServicesKit';
 
 @Component
 export default struct ScoreScreen {
   @Consume('scoreInfo') scoreInfo: Score;
   @Consume('pages') pages: NavPathStack;
-  @Consume('totalXp') totalXp: number;
+  private hasStoredScore: boolean = false;
+
+  aboutToAppear(): void {
+    if (this.hasStoredScore) {
+      return;
+    }
+
+    storeScore(this.getUIContext().getHostContext() as Context, this.scoreInfo.score, this.scoreInfo.percent);
+    this.hasStoredScore = true;
+  }
 
   build() {
     NavDestination() {
-
       Column({ space: 8 }) {
-
         Image(this.scoreInfo.percent <= 25 ?
           $r('app.media.low_score_img') :
           this.scoreInfo.percent <= 75 ? $r('app.media.mid_score_img') : $r('app.media.high_score_img')
         ).width(70)
-        Text('Quiz Completed!')
+        Text($r('app.string.score_completed'))
           .fontSize(18)
           .fontWeight(FontWeight.Bold)
           .textAlign(TextAlign.Center)
@@ -30,8 +36,6 @@ export default struct ScoreScreen {
             .fontWeight(FontWeight.Bold)
             .fontColor(Color.Green)
             .margin({ bottom: 6 })
-
-
           Text(`Percent: ${this.scoreInfo.percent}%`)
             .fontSize(14)
             .fontWeight(FontWeight.Bold)
@@ -48,35 +52,31 @@ export default struct ScoreScreen {
         .borderRadius(16)
         .shadow({
           radius: 8,
-          color: '#999999',
+          color: $r('app.color.color_shadow'),
           offsetX: 0,
           offsetY: 4
         })
 
         CustomButton({
-          text: 'Continue',
+          text: $r('app.string.btn_continue'),
           isEnabled: true,
           type: true,
           onAction: () => {
-            storeScore(this.getUIContext().getHostContext() as Context, this.scoreInfo.score, this.scoreInfo.percent);
-            emitter.emit({ eventId: 1 });
+            this.pages.clear();
             this.pages.pushPathByName('MainScreen', 0)
           }
         }).width('50%')
           .margin({ top: -7 })
-
       }
       .alignItems(HorizontalAlign.Center)
       .justifyContent(FlexAlign.Center)
-      .width('%100')
+      .width('100%')
       .height('100%')
-
     }
     .backgroundColor(Color.White)
     .hideBackButton(true)
     .onBackPressed(() => {
-      storeScore(this.getUIContext().getHostContext() as Context, this.scoreInfo.score, this.scoreInfo.percent);
-      emitter.emit({ eventId: 1 });
+      this.pages.clear();
       this.pages.pushPathByName('MainScreen', 0)
       return true
     })

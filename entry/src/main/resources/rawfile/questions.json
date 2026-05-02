@@ -1,0 +1,330 @@
+{
+  "Asia": [
+    {
+      "question": "明天会下雨",
+      "languageException": false,
+      "options": [
+        { "value": "Chinese", "isCorrect": true },
+        { "value": "Japanese", "isCorrect": false },
+        { "value": "Korean", "isCorrect": false },
+        { "value": "Hindi", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "私は仕事に遅れています",
+      "languageException": false,
+      "options": [
+        { "value": "Korean", "isCorrect": false },
+        { "value": "Japanese", "isCorrect": true },
+        { "value": "Indonesian", "isCorrect": false },
+        { "value": "Welsh", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Tuklu evden bi dəfə semsiyemi alsa ydim",
+      "languageException": false,
+      "options": [
+        { "value": "Albanian", "isCorrect": false },
+        { "value": "Finnish", "isCorrect": false },
+        { "value": "Azerbaijani", "isCorrect": true },
+        { "value": "Kazakh", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "दोपहर का खाना अच्छा था",
+      "languageException": "NotoSansDevanagari",
+      "options": [
+        { "value": "Korean", "isCorrect": false },
+        { "value": "Thai", "isCorrect": false },
+        { "value": "Hindi", "isCorrect": true },
+        { "value": "Hebrew", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Бид удахгүй явна",
+      "languageException": false,
+      "options": [
+        { "value": "Mongolian", "isCorrect": true },
+        { "value": "Kazakh", "isCorrect": false },
+        { "value": "Georgian", "isCorrect": false },
+        { "value": "Hindi", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Tôi sẽ đưa chú tôi đến bệnh viện",
+      "languageException": false,
+      "options": [
+        { "value": "Chinese", "isCorrect": false },
+        { "value": "Indonesian", "isCorrect": false },
+        { "value": "Thai", "isCorrect": false },
+        { "value": "Vietnamese", "isCorrect": true }
+      ]
+    },
+    {
+      "question": "ผมทำโครงการนี้เสร็จ",
+      "languageException": false,
+      "options": [
+        { "value": "Japanese", "isCorrect": false },
+        { "value": "Chinese", "isCorrect": false },
+        { "value": "Thai", "isCorrect": true },
+        { "value": "Austronesian", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "내일 일 있어요?",
+      "languageException": false,
+      "options": [
+        { "value": "Korean", "isCorrect": true },
+        { "value": "Japanese", "isCorrect": false },
+        { "value": "Chinese", "isCorrect": false },
+        { "value": "Uzbek", "isCorrect": false }
+      ]
+    }
+  ],
+  "Europe": [
+    {
+      "question": "It will rain tomorrow.",
+      "languageException": false,
+      "options": [
+        { "value": "English", "isCorrect": true },
+        { "value": "French", "isCorrect": false },
+        { "value": "Spanish", "isCorrect": false },
+        { "value": "Italian", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Llego tarde al trabajo",
+      "languageException": false,
+      "options": [
+        { "value": "Turkish", "isCorrect": false },
+        { "value": "Spanish", "isCorrect": true },
+        { "value": "Serbian", "isCorrect": false },
+        { "value": "Albanian", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Olisinpa ottanut sateenvarjoni ennen lähtöäni",
+      "languageException": false,
+      "options": [
+        { "value": "English", "isCorrect": false },
+        { "value": "Norwegian", "isCorrect": false },
+        { "value": "Finnish", "isCorrect": true },
+        { "value": "Kazakh", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Az ebéd jó volt",
+      "languageException": false,
+      "options": [
+        { "value": "Korean", "isCorrect": false },
+        { "value": "Thai", "isCorrect": false },
+        { "value": "Hungarian", "isCorrect": true },
+        { "value": "Greek", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Θα φύγουμε σύντομα",
+      "languageException": false,
+      "options": [
+        { "value": "Greek", "isCorrect": true },
+        { "value": "Croatian", "isCorrect": false },
+        { "value": "Polish", "isCorrect": false },
+        { "value": "Czech", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Îl duc pe unchiul meu la spital",
+      "languageException": false,
+      "options": [
+        { "value": "German", "isCorrect": false },
+        { "value": "Macedonian", "isCorrect": false },
+        { "value": "Bulgarian", "isCorrect": false },
+        { "value": "Romanian", "isCorrect": true }
+      ]
+    },
+    {
+      "question": "Projeyi bitirdim",
+      "languageException": false,
+      "options": [
+        { "value": "Portuguese", "isCorrect": false },
+        { "value": "German", "isCorrect": false },
+        { "value": "Turkish", "isCorrect": true },
+        { "value": "Serbian", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Musst du morgen arbeiten?",
+      "languageException": false,
+      "options": [
+        { "value": "German", "isCorrect": true },
+        { "value": "Turkish", "isCorrect": false },
+        { "value": "Swedish", "isCorrect": false },
+        { "value": "Dutch", "isCorrect": false }
+      ]
+    }
+  ],
+  "Africa": [
+    {
+      "question": "سوف تمطر غداً",
+      "languageException": false,
+      "options": [
+        { "value": "Arabic", "isCorrect": true },
+        { "value": "Somali", "isCorrect": false },
+        { "value": "Hebrew", "isCorrect": false },
+        { "value": "Vietnamese", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Mbi yeke na retart na kua",
+      "languageException": false,
+      "options": [
+        { "value": "Malagasy", "isCorrect": false },
+        { "value": "Sango", "isCorrect": true },
+        { "value": "Zulu", "isCorrect": false },
+        { "value": "French", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Ngikhohlwe isambulela sami",
+      "languageException": false,
+      "options": [
+        { "value": "Sango", "isCorrect": false },
+        { "value": "Arabic", "isCorrect": false },
+        { "value": "Zulu", "isCorrect": true },
+        { "value": "Malagasy", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Ukudla kumnandi",
+      "languageException": false,
+      "options": [
+        { "value": "Sango", "isCorrect": false },
+        { "value": "Malagasy", "isCorrect": false },
+        { "value": "Zulu", "isCorrect": true },
+        { "value": "Somali", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Nous partirons bientôt",
+      "languageException": false,
+      "options": [
+        { "value": "French", "isCorrect": true },
+        { "value": "Turkish", "isCorrect": false },
+        { "value": "Malagasy", "isCorrect": false },
+        { "value": "Zulu", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "I'm taking my uncle to the hospital",
+      "languageException": false,
+      "options": [
+        { "value": "French", "isCorrect": false },
+        { "value": "Malagasy", "isCorrect": false },
+        { "value": "Arabic", "isCorrect": false },
+        { "value": "English", "isCorrect": true }
+      ]
+    },
+    {
+      "question": "أنهيت هذا المشروع.",
+      "languageException": false,
+      "options": [
+        { "value": "Malagasy", "isCorrect": false },
+        { "value": "German", "isCorrect": false },
+        { "value": "Arabic", "isCorrect": true },
+        { "value": "Sango", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Ma inaad berri shaqeysaa?",
+      "languageException": false,
+      "options": [
+        { "value": "Somali", "isCorrect": true },
+        { "value": "Arabic", "isCorrect": false },
+        { "value": "Sango", "isCorrect": false },
+        { "value": "French", "isCorrect": false }
+      ]
+    }
+  ],
+  "America": [
+    {
+      "question": "Mañana lloverá",
+      "languageException": false,
+      "options": [
+        { "value": "Spanish", "isCorrect": true },
+        { "value": "French", "isCorrect": false },
+        { "value": "English", "isCorrect": false },
+        { "value": "Italian", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "I'm late for work",
+      "languageException": false,
+      "options": [
+        { "value": "German", "isCorrect": false },
+        { "value": "English", "isCorrect": true },
+        { "value": "Spanish", "isCorrect": false },
+        { "value": "Albanian", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Eu queria ter levado meu guarda-chuva antes de sair de casa",
+      "languageException": false,
+      "options": [
+        { "value": "English", "isCorrect": false },
+        { "value": "Spanish", "isCorrect": false },
+        { "value": "Portuguese", "isCorrect": true },
+        { "value": "Dutch", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "le déjeuner était bon",
+      "languageException": false,
+      "options": [
+        { "value": "Korean", "isCorrect": false },
+        { "value": "Finnish", "isCorrect": false },
+        { "value": "French", "isCorrect": true },
+        { "value": "Filipino", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "We vertrekken binnenkort",
+      "languageException": false,
+      "options": [
+        { "value": "Dutch", "isCorrect": true },
+        { "value": "Filipino", "isCorrect": false },
+        { "value": "French", "isCorrect": false },
+        { "value": "Spanish", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Che araha hĩna che tio tasyõpe",
+      "languageException": false,
+      "options": [
+        { "value": "French", "isCorrect": false },
+        { "value": "Spanish", "isCorrect": false },
+        { "value": "Portuguese", "isCorrect": false },
+        { "value": "Guarani", "isCorrect": true }
+      ]
+    },
+    {
+      "question": "Chay llankʼayta tukucharqani",
+      "languageException": false,
+      "options": [
+        { "value": "Portuguese", "isCorrect": false },
+        { "value": "Guarani", "isCorrect": false },
+        { "value": "Quechua", "isCorrect": true },
+        { "value": "Spanish", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Do you have to work tomorrow?",
+      "languageException": false,
+      "options": [
+        { "value": "English", "isCorrect": true },
+        { "value": "Spanish", "isCorrect": false },
+        { "value": "Dutch", "isCorrect": false },
+        { "value": "French", "isCorrect": false }
+      ]
+    }
+  ]
+}

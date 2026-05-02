@@ -5,17 +5,17 @@ import { ArcList, ArcListItem, ArcListAttribute, ArcListItemAttribute } from '@k
 @Builder
 function buildText() {
   Column() {
-    Text('Category')
+    Text($r('app.string.label_category'))
       .fontSize('60px')
       .fontWeight(FontWeight.Bold)
-      .fontColor('#311E10')
+      .fontColor($r('app.color.color_primary'))
   }.margin(0)
 }
 
 @Component
 export default struct ContinentChooseScreen {
-  @Consume('pages') pages: NavPathStack;
-  @State continents: Array<string> = ['All', 'Asia', 'Europe', 'Africa', 'America'];
+  @Consume('pages') pages: NavPathStack = new NavPathStack();
+  private readonly continents: Array<string> = ['All', 'Asia', 'Europe', 'Africa', 'America'];
   @Provide('chosenCont') chosenCont: string = 'All';
   private watchSize: string = '466px';
   private listSize: string = '414px';
@@ -34,38 +34,39 @@ export default struct ContinentChooseScreen {
       .backgroundColor(Color.White)
 
       ArcList({ initialIndex: 0, header: this.tabBar1 }) {
-        ForEach(this.continents, (item: number, index: number) => {
+        ForEach(this.continents, (item: string) => {
           ArcListItem() {
-            Button(` ${item}` , { type: ButtonType.Capsule })
+            Button(` ${item}`, { type: ButtonType.Capsule })
               .width(this.listSize)
               .height('100px')
               .fontSize('40px')
               .focusable(true)
               .focusOnTouch(true)
-              .backgroundColor('#EABE7C')
+              .backgroundColor($r('app.color.color_gold'))
               .borderWidth(2)
               .borderRadius(12)
-              .borderColor('#311E10')
+              .borderColor($r('app.color.color_primary'))
               .onClick(() => {
-                this.chosenCont = item.toString()
+                this.chosenCont = item
                 this.pages.pushPathByName('QuizScreen', this.chosenCont)
               })
           }.align(Alignment.Center)
-        }, (item: number, index: number) => (item).toString())
+        }, (item: string) => item)
 
-        ArcListItem(){
-          Button('Back' , { type: ButtonType.Capsule })
+        ArcListItem() {
+          Button($r('app.string.btn_back'), { type: ButtonType.Capsule })
             .width('212px')
             .height('100px')
             .fontSize('40px')
             .focusable(true)
             .focusOnTouch(true)
-            .backgroundColor('#311E10')
+            .backgroundColor($r('app.color.color_primary'))
             .borderWidth(2)
             .borderRadius(12)
-            .borderColor('#EABE7C')
+            .borderColor($r('app.color.color_gold'))
             .onClick(() => {
-              this.pages.pushPathByName('MainScreen', this.chosenCont)
+              this.pages.clear();
+              this.pages.pushPathByName('MainScreen', 0)
             })
         }
       }
